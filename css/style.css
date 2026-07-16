@@ -190,8 +190,6 @@ text-shadow:0 0 15px #b517ff;
 
 }
 
-/* Sections */
-
 section{
 
 min-height:100vh;
@@ -288,7 +286,7 @@ padding:25px;
 
 border-radius:18px;
 
-background:#17081f;
+background:#110617;
 
 border-left:5px solid #b517ff;
 
