@@ -1,0 +1,521 @@
+/* ========= GOOGLE FONT ========= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+    background:#0a0a0a;
+
+    position:relative;
+
+}
+
+/* Animated Background */
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* Purple Flame Glow */
+
+body::before{
+
+background:rgba(183,0,255,.08)
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:700px;
+height:700px;
+
+background:radial-gradient(circle,
+rgba(8, 8, 8, 0.35),
+transparent 70%);
+
+bottom:-200px;
+right:-180px;
+
+filter:blur(100px);
+
+animation:flame2 12s ease-in-out infinite;
+
+z-index:-2;
+
+}
+
+@keyframes flame1{
+
+0%{transform:translateY(0) scale(1);}
+50%{transform:translateY(70px) scale(1.2);}
+100%{transform:translateY(0) scale(1);}
+
+}
+
+@keyframes flame2{
+
+0%{transform:translateY(0) scale(1);}
+50%{transform:translateY(-70px) scale(1.2);}
+100%{transform:translateY(0) scale(1);}
+
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+position:fixed;
+top:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(15,15,15,.45);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(174,0,255,.3);
+
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:bold;
+
+/* Purple Gradient Text */
+
+background:linear-gradient(
+90deg,
+#d896ff,
+#9d4edd,
+#5a189a,
+#e0aaff);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:textFlow 5s linear infinite;
+
+}
+
+/* Animated Gradient Text */
+
+h1,h2,h3,strong{
+
+background:linear-gradient(
+90deg,
+#f0c6ff,
+#b5179e,
+#7209b7,
+#9d4edd,
+#e0aaff);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:textFlow 6s linear infinite;
+
+}
+
+@keyframes textFlow{
+
+0%{background-position:0%;}
+
+100%{background-position:300%;}
+
+}
+
+/* Paragraph */
+
+p{
+
+color:#e7d8ff;
+
+line-height:1.9;
+
+}
+
+/* Links */
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:30px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:#eee;
+font-weight:500;
+transition:.4s;
+
+}
+
+nav ul li a:hover{
+
+color:#d896ff;
+text-shadow:0 0 15px #b517ff;
+
+}
+
+/* Sections */
+
+section{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:120px 8%;
+
+}
+
+/* Glass Card */
+
+.about-container,
+.education-container,
+.skills-container,
+.projects-container,
+.contact-container{
+
+max-width:1100px;
+width:100%;
+
+padding:50px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(170,0,255,.25);
+
+box-shadow:
+0 0 35px rgba(138,43,226,.2);
+
+transition:.5s;
+
+}
+
+.about-container:hover,
+.education-container:hover,
+.skills-container:hover,
+.projects-container:hover,
+.contact-container:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 0 60px rgba(170,0,255,.45);
+
+}
+
+/* Skill Cards */
+
+.skill-list{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+.skill-card{
+
+padding:18px 35px;
+
+border-radius:15px;
+
+background:#1b0b29;
+
+border:1px solid #6a00ff;
+
+transition:.4s;
+
+color:#fff;
+
+}
+
+.skill-card:hover{
+
+background:#8a2be2;
+
+transform:translateY(-8px) scale(1.08);
+
+box-shadow:0 0 30px #b517ff;
+
+}
+
+/* Project */
+
+.project-card{
+
+margin-top:25px;
+
+padding:25px;
+
+border-radius:18px;
+
+background:#17081f;
+
+border-left:5px solid #b517ff;
+
+transition:.4s;
+
+}
+
+.project-card:hover{
+
+transform:scale(1.03);
+
+box-shadow:0 0 35px #7209b7;
+
+}
+
+/* Contact */
+
+.contact-container strong{
+
+color:#d896ff;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#8a2be2;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#050505;
+
+}
+section{
+
+    transition:transform .4s ease;
+
+}
+/* ==========================================================================
+   ✨ LUXURY HERO SECTION ARCHITECTURE
+   ========================================================================== */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 5%;
+    /* ⬇ မင်းပြထားတဲ့ပုံစံအတိုင်း နောက်ခံပုံထည့်ပြီး အမှောင်ချခြင်း */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
+                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Big Title Styles */
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.hero-content .highlight {
+    color: #9d4edd;
+    text-shadow: 0 0 30px rgba(157, 78, 221, 0.6);
+    background: linear-gradient(45deg, #a29bfe, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Typing Subtitle */
+.hero-content h3.typing-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: #e7d8ff;
+    border-right: 3px solid #9d4edd; /* Cursor Line */
+    padding-right: 8px;
+    display: inline-block;
+    animation: blinkCursor 0.8s step-end infinite;
+    margin-bottom: 8px;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 550px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* 🌟 Luxury Capsule Button Dynamic Glow */
+.btn-hero {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #6c5ce7;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px; /* Capsule Shape */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    background: #5f27cd;
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.7), 
+                0 0 15px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Animations */
+@keyframes blinkCursor {
+    from, to { border-color: transparent }
+    50% { border-color: #9d4edd; }
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 42px; }
+    .hero-content h3.typing-text { font-size: 22px; }
+    .hero-desc { font-size: 14px; }
+}
+#home{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(128,0,255,.25),
+    transparent 40%),
+
+    #000;
+
+}
+.home-container{
+
+    text-align:center;
+
+    padding:60px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(150,80,255,.3);
+
+    box-shadow:
+    0 0 40px rgba(128,0,255,.25);
+
+}
+#home{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+#home::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:radial-gradient(circle,
+    #8a2be2,
+    transparent 70%);
+
+    filter:blur(100px);
+
+    animation:homeGlow 8s infinite alternate;
+
+}
+
+
+@keyframes homeGlow{
+
+    from{
+        transform:translate(-100px,-50px);
+    }
+
+    to{
+        transform:translate(200px,100px);
+    }
+
+}
