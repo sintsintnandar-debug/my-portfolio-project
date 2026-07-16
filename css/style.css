@@ -1,4 +1,4 @@
-/* ========= GOOGLE FONT ========= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -22,7 +22,6 @@ body{
 
 }
 
-/* Animated Background */
 @keyframes bgMove{
 
 0%{background-position:0% 50%;}
@@ -33,7 +32,6 @@ body{
 
 }
 
-/* Purple Flame Glow */
 
 body::before{
 
@@ -81,7 +79,6 @@ z-index:-2;
 
 }
 
-/* ================= NAVBAR ================= */
 
 nav{
 
@@ -110,7 +107,6 @@ z-index:1000;
 font-size:30px;
 font-weight:bold;
 
-/* Purple Gradient Text */
 
 background:linear-gradient(
 90deg,
@@ -128,7 +124,6 @@ animation:textFlow 5s linear infinite;
 
 }
 
-/* Animated Gradient Text */
 
 h1,h2,h3,strong{
 
@@ -157,7 +152,6 @@ animation:textFlow 6s linear infinite;
 
 }
 
-/* Paragraph */
 
 p{
 
@@ -166,8 +160,6 @@ color:#e7d8ff;
 line-height:1.9;
 
 }
-
-/* Links */
 
 nav ul{
 
@@ -212,7 +204,6 @@ padding:120px 8%;
 
 }
 
-/* Glass Card */
 
 .about-container,
 .education-container,
@@ -253,8 +244,6 @@ box-shadow:
 
 }
 
-/* Skill Cards */
-
 .skill-list{
 
 display:flex;
@@ -290,7 +279,6 @@ box-shadow:0 0 30px #b517ff;
 
 }
 
-/* Project */
 
 .project-card{
 
@@ -316,7 +304,6 @@ box-shadow:0 0 35px #7209b7;
 
 }
 
-/* Contact */
 
 .contact-container strong{
 
@@ -324,7 +311,6 @@ color:#d896ff;
 
 }
 
-/* Scrollbar */
 
 ::-webkit-scrollbar{
 
@@ -350,9 +336,6 @@ section{
     transition:transform .4s ease;
 
 }
-/* ==========================================================================
-   ✨ LUXURY HERO SECTION ARCHITECTURE
-   ========================================================================== */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -361,7 +344,6 @@ section{
     text-align: center;
     position: relative;
     padding: 0 5%;
-    /* ⬇ မင်းပြထားတဲ့ပုံစံအတိုင်း နောက်ခံပုံထည့်ပြီး အမှောင်ချခြင်း */
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
                 url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964') no-repeat center center/cover;
     overflow: hidden;
@@ -376,7 +358,6 @@ section{
     gap: 14px;
 }
 
-/* Big Title Styles */
 .hero-content h1 {
     font-size: 64px;
     font-weight: 900;
@@ -394,12 +375,11 @@ section{
     -webkit-text-fill-color: transparent;
 }
 
-/* Typing Subtitle */
 .hero-content h3.typing-text {
     font-size: 28px;
     font-weight: 500;
     color: #e7d8ff;
-    border-right: 3px solid #9d4edd; /* Cursor Line */
+    border-right: 3px solid #9d4edd; 
     padding-right: 8px;
     display: inline-block;
     animation: blinkCursor 0.8s step-end infinite;
@@ -414,7 +394,6 @@ section{
     margin-bottom: 24px;
 }
 
-/* 🌟 Luxury Capsule Button Dynamic Glow */
 .btn-hero {
     display: inline-block;
     padding: 14px 36px;
@@ -423,7 +402,7 @@ section{
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    border-radius: 50px; /* Capsule Shape */
+    border-radius: 50px; 
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -437,13 +416,11 @@ section{
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Animations */
 @keyframes blinkCursor {
     from, to { border-color: transparent }
     50% { border-color: #9d4edd; }
 }
 
-/* Responsive Scaling */
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 42px; }
     .hero-content h3.typing-text { font-size: 22px; }
