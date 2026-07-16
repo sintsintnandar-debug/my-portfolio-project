@@ -29,8 +29,7 @@ Welcome to our professional group portfolio, architected with a semantic HTML5 b
 - Responsive Web Design
 - CSS Animation & Styling
 - Git Branch Management
-- Pull Request Workflow
-
+- Pull Request Workflow and Code Review
 ## 📂 Mini Projects
 
 ### NexaMint Terminal POS System
